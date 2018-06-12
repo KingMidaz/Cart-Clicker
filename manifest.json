@@ -1,0 +1,14 @@
+{
+    "name": "Cart  Clicker",
+    "version": "1.0",
+    "description": "Adds new release items to cart",
+    "content_scripts": [
+		{
+			"matches": [
+				"https://store.nike.com/*", "https://www.nike.com/*", "https://shop.adidas.co.za/*"
+			],
+			"js": ["jQuery3.3.1.js", "clicker.js"]
+		}
+	],
+	"manifest_version": 2
+  }
