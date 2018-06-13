@@ -1,6 +1,7 @@
 var requiredSizes = [9, 9.5, 10, 8.5, 8, 10.5, "L"];
 var x;
 var mouseUp = new Event("mouseup");
+
 function runForever() {
 	alert("Running Forever...");
 
@@ -8,8 +9,6 @@ function runForever() {
 		executeSelection();
 	}, 500);
 }
-
-
 
 function runOnce() {
 	alert("Running Once...");
@@ -43,9 +42,6 @@ function executeSelection() {
 			}
 		}
 	}
-	
-	//console.log(sizes);
-	//console.log(cart);
 
 	for (let p = 0; p < sizes.length; p++) {
 		$(sizes[p]).click();
